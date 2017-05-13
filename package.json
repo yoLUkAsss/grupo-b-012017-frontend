@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/yoLUkAsss/grupo-b-012017-frontend#readme",
   "dependencies": {
-    "express": "4.15.2"
+    "express": "4.15.2",
+    "html": "1.0.0"
   }
 }
