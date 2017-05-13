@@ -11,16 +11,18 @@
     "type": "git",
     "url": "git+https://github.com/yoLUkAsss/grupo-b-012017-frontend.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yoLUkAsss/grupo-b-012017-frontend/issues"
-  },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-  "homepage": "https://github.com/yoLUkAsss/grupo-b-012017-frontend#readme"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoLUkAsss/grupo-b-012017-frontend/issues"
+  },
+  "homepage": "https://github.com/yoLUkAsss/grupo-b-012017-frontend#readme",
+  "dependencies": {
+    "express": "4.15.2"
+  }
 }
