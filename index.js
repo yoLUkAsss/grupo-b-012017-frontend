@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/assets'));
 app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
-  response.render('views/index.html');
+  response.render('index.html');
 });
 
 app.listen(app.get('port'), function() {
