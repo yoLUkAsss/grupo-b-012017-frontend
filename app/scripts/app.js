@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name alolocoAppApp
+ * @name aloloco-app
  * @description
- * # alolocoAppApp
+ * # aloloco-app
  *
  * Main module of the application.
  */
 angular
-  .module('alolocoAppApp', [
+  .module('aloloco-app', [
     'ngAnimate',
     'ngAria',
     'ngCookies',

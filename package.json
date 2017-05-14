@@ -1,5 +1,5 @@
 {
-  "name": "alolocoapp",
+  "name": "aloloco-app",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
@@ -41,7 +41,11 @@
     "test": "karma start test/karma.conf.js"
   },
   "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
     "express": "^4.15.2",
-    "gzippo": "^0.2.0"
+    "gzippo": "^0.2.0",
+    "jquery": "^3.2.1",
+    "path": "^0.12.7"
   }
 }

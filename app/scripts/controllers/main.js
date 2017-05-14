@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name alolocoAppApp.controller:MainCtrl
+ * @name aloloco-app.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the alolocoAppApp
+ * Controller of the aloloco-app
  */
-angular.module('alolocoAppApp')
+angular.module('aloloco-app')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

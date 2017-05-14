@@ -6,7 +6,20 @@
 }
 
 body {
-  padding: 0;
+    padding: 0;
+    background-image: url("../images/background-image.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.toRight {
+  width: 700px ;
+  margin: 0  auto;
+}
+
+.footer {
+  text-align: center;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
