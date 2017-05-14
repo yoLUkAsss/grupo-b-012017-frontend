@@ -9,8 +9,8 @@ app.use(express.static(__dirname + '/assets'));
 app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
-  console.log(path.join(__dirname + '/index.html'));
-  response.sendFile( path.join(__dirname + '/views/index.html'));
+  console.log('dir : ' + path.join(__dirname));
+
 });
 
 app.listen(app.get('port'), function() {
