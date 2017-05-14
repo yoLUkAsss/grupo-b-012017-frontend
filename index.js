@@ -10,7 +10,7 @@ app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
   console.log(path.join(__dirname + '/index.html'));
-  response.sendFile( path.join(__dirname + 'views/index.html'));
+  response.sendFile( path.join(__dirname + '/views/index.html'));
 });
 
 app.listen(app.get('port'), function() {
