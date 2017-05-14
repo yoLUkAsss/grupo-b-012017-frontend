@@ -9,11 +9,10 @@ app.use(express.static(__dirname + '/assets'));
 app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
-  console.log('dir : ' + path.join(__dirname));
-
+  console.log(path.join(__dirname + '/index.html'));
+  response.sendFile( path.join(__dirname + '/views/index.html'));
 });
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
-  console.log('dir : ' + path.join(__dirname));
 });
