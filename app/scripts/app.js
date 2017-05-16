@@ -35,3 +35,5 @@ angular
         redirectTo: '/'
       });
   });
+
+angular.module('aloloco-app').constant('myURL', 'http://localhost:8080/grupo-b-012017/rest/');
