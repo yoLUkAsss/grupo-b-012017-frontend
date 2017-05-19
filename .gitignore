@@ -3,6 +3,7 @@
 /.tmp
 /.sass-cache
 */bower_components/*
+<<<<<<< HEAD
 node_modules/
 bower_components/
 *.log
@@ -68,3 +69,6 @@ typings/
 
 # dotenv environment variables file
 .env
+=======
+/bin/
+>>>>>>> 906e83bd3c2c12f7c2e0b1fb34f9d36da7fee85c
