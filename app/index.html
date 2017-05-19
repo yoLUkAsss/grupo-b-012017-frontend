@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+  <head>
+      
+    <script type="text/javascript" src="js/external/angular.min.js"></script>
+    <script type="text/javascript" src="js/external/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/external/angular-resource.min.js"></script>
+    <script type="text/javascript" src="js/external/jquery.min.js"></script>
+    <script type="text/javascript" src="js/external/tether.min.js"></script>
+    <script type="text/javascript" src="js/external/bootstrap.min.js"></script>
+      
+    <script type="text/javascript" src="js/controllers/homeController.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+      
+      
+      
+    <link rel="stylesheet" type="text/css" href="styles/external/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/external/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/external/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/external/tether-theme-arrows-dark.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/external/tether-theme-arrows.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/external/tether-theme-basic.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/external/tether.min.css">
+        
+  </head>
+
+  <body ng-app="aloloco-app">
+    <div class="container-fluid">
+      <div>
+          <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+              <div class="navbar-collapse collapse dual-collapse">
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+              <a class="navbar-brand d-flex mx-auto" href="#">A lo loco!!! </a>
+              <div id="logoutDiv" class="hide navbar-collapse collapse dual-collapse">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item btn-sm btn-outline-success">
+                          <a class="nav-link " href="#">Log Out</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+
+        </div>
+
+
+        <div>
+          <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+              <div class="navbar-collapse collapse dual-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item btn-sm btn-outline-success active">
+                        <a class="nav-link " ng-click="getAllProducts()">Products</a>
+                    </li>
+                    <li class="nav-item btn-sm btn-outline-success">
+                        <a class="nav-link " href="#">Offers</a>
+                    </li>
+                    <li class="nav-item btn-sm btn-outline-success " style="margin:auto">
+                        <a class="nav-link " href="#">My Profile</a>
+                    </li>
+                    <li class="nav-item btn-sm btn-outline-success" style="margin:auto">
+                        <a class="nav-link " href="#">Create Offer</a>
+                    </li>
+                </ul>
+              </div>
+              <div class="navbar-collapse collapse dual-collapse">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item btn-sm btn-outline-success">
+                          <a class="nav-link " href="#">Account</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+        </div>
+
+        <div>
+          <div class="row">
+            <div class="col col-md-4">
+              <ul class="list-group">
+               <!-- <ng-repeat li class="list-group-item"> {{element.name}} </li>  -->
+                <li class="list-group-item">
+                  <a class="nav-link " href="#">Create New</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col col-md-8">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a class="nav-link " href="#">Create New</a>
+                </li>
+                <li ng-repeat="prod in products" class="list-group-item">
+                  {{prod.name}}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" ng-view></div>
+        
+        <footer class="fixed-bottom">
+          <div class="footer">
+            <h5> Laime Jesus & Sandoval Lucas Enterprise - 2017  </h5>
+          </div>
+        </footer>
+
+      </div>
+
+   </body>
+</html>
